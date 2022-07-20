@@ -8,13 +8,16 @@ import theme from "./theme";
 
 import App from "./App";
 import ReduxWrapper from "./redux";
+import { OpenCvProvider } from "opencv-react";
 
 ReactDOM.render(
   <ReduxWrapper>
     <ThemeProvider theme={theme}>
-      <Router basename="/">
-        <App />
-      </Router>
+      <OpenCvProvider>
+        <Router basename="/">
+          <App />
+        </Router>
+      </OpenCvProvider>
     </ThemeProvider>
   </ReduxWrapper>,
   document.getElementById("root")

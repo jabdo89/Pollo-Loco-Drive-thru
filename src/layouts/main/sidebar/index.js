@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import { Link, withRouter } from "react-router-dom";
-import { Image } from "antd";
 import {
   UserAddOutlined,
   HomeOutlined,
@@ -50,7 +49,7 @@ const Sidebar = ({ history, collapsed, onCollapse, profile }) => {
         defaultSelectedKeys={history.location.pathname.toLowerCase()}
         selectedKeys={history.location.pathname.toLowerCase()}
       >
-        <Image
+        <img
           width={80}
           src={Logo}
           style={{ marginRight: 100, marginLeft: 40 }}

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Layout as Layer } from "antd";
 import Sidebar from "./sidebar";
-import Navbar from "./navbar";
 import Footer from "./footer";
 
 const MainLayout = ({ children }) => {
